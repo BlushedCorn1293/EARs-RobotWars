@@ -10,7 +10,7 @@ The BattleBot will be a Featherweight (13.6kg) which features a 4-bar flipper we
 
 ### Team
 
-The BattleBot team consists of 7 members from the Electronics and Radio Society, collaborating on various aspects including design, engineering, coding, and testing. Each team member contributes their skills to ensure a well-rounded and competitive robot.
+The BattleBot team consists of 7 members from the Electronics and Radio Society, collaborating on various aspects including design, engineering, coding, and testing. Each team member contributes their skills to ensure a well-rounded and competitive robot. I am responsible for producing the code to control the weapon on the battlebot and for designing the cad for the weapon.
 
 ### Key Features
 
@@ -30,4 +30,4 @@ The repository is organized as follows:
 
     Weapon Activation: The motor powers a threaded screw that drives the flipper forward.
     Flipper Retraction: When deactivated, the motor retracts the screw to reset the flipper position.
-    Code Execution: The control code uses a combination of sensors (if available) and timing to manage the flipper's position and responsiveness.
+    Code Execution: The control code uses hall effect sensors and timing to manage the flipper's position and responsiveness.
