@@ -2,7 +2,7 @@
 
 BattleBot Project - Electronics and Radio Society
 
-Welcome to the repository for the BattleBot Project! This repository contains all the code for a BattleBot I am developing as part of the University Electronics and Radio Society. Our team of 7 members is building and programming this robot from scratch, working together to create a competitive and reliable bot for combat robotics events.
+Welcome to the repository for the BattleBot Project! This repository contains all the code I am developing for a BattleBot as part of a team within the University Electronics and Radio Society. Our team of 7 members is building and programming this robot from scratch, working together to create a competitive and reliable bot for combat robotics events.
 
 Project Overview
 
