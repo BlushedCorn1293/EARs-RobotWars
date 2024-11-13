@@ -2,12 +2,12 @@
 // used to find min and max pulse values to control the motor
 // also used to find the pulse value which is sent when a switch on the controller changes state
 
-const int recieverPin = 9;  // Pin connected to the throttle signal from the RC reciever
+const int recieverPin = 13;  // Pin connected to the throttle signal from the RC reciever
 int recieverPulseValue;
 
 void setup() {
   // put your setup code here, to run once:
-  Serial.begin(9600);  // Initialise the serial communication
+  Serial.begin(115200);  // Initialise the serial communication
   Serial.println("Starting");
   pinMode(recieverPin, INPUT);
 }

@@ -1,15 +1,15 @@
 // Program to test that the ESP32 is able to control the motor via a switch
 // When the switch is on, the motor spins to max speed and when off stop
 
-#include <ESP32Servo.h>
+#include <Servo.h>
 
-const int escPin = 9;       // PWM pin connected to the ESC signal wire
+const int escPin = 3;       // PWM pin connected to the ESC signal wire
 const int switchPin = 10;   // Pin where the switch is connected
 
 // Can be treated as a percentage of throttle value
 const int minThrottlePulse = 995;   // Minimum Throttle pulse from Controller
 const int maxThrottlePulse = 1867;  // Maximum Throttle pulse from Controller
-const int highThrottle = 5;         // Max throttle as a percentage out of 100
+const int highThrottle = 100;         // Max throttle as a percentage out of 100
 
 int outThrottle = minThrottlePulse;  // Set default throttle to 0
 
@@ -22,7 +22,7 @@ bool lastSwitchState;
 
 void setup() {
   // put your setup code here, to run once:
-  Serial.begin(9600);         // Initialise the serial communication
+  Serial.begin(115200);         // Initialise the serial communication
   pinMode(switchPin, INPUT);  // Set the switch pin as input
 
   switchOff = digitalRead(switchPin); // Capture the initial state as OFF

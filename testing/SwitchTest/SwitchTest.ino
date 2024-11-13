@@ -7,8 +7,8 @@ bool switchOff;
 bool lastSwitchState;
 
 void setup() {
-  Serial.begin(9600);                  // Initialize the serial communication
-  pinMode(switchPin, INPUT);           // Set the switch pin as input
+  Serial.begin(115200);                  // Initialize the serial communication
+  pinMode(switchPin, INPUT_PULLUP);           // Set the switch pin as input
   switchOff = digitalRead(switchPin);  // Capture the initial state as OFF
   lastSwitchState = !switchOff;        //  Set last state to be opposite initally
   Serial.println("Setup Completed");
@@ -17,7 +17,7 @@ void setup() {
 void loop() {
   // Read the state of the switch
   switchState = digitalRead(switchPin);
-
+// Serial.println(switchState);
   if (switchState != lastSwitchState) {
     if (switchState == switchOff) {
       Serial.println("Switch is off");

@@ -1,5 +1,0 @@
-[wokwi]
-rfc2217ServerPort = 4000
-version = 1
-firmware = 'build/esp32.esp32.esp32c3/ThrottleOutputTest.ino.bin'
-elf = 'build/esp32.esp32.esp32c3/ThrottleOutputTest.ino.elf'
